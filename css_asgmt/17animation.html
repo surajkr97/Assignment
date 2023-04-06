@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        @keyframes vip1 {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+                height: 300px;
+            }
+
+            100% {
+                background-color: yellow;
+                height: 200px;
+            }
+        }
+
+        @keyframes vip2 {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+                width: 300px;
+            }
+
+            100% {
+                background-color: yellow;
+                width: 200px;
+            }
+        }
+
+        #div1 {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            animation: vip1 3s infinite alternate;
+            animation-iteration-count: 5;
+        }
+
+        #div2 {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            animation: vip1 3s infinite;
+            animation-iteration-count: 5;
+        }
+
+        #div3 {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            animation: vip2 3s infinite alternate;
+            animation-iteration-count: 5;
+        }
+
+        #div4 {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            animation: vip2 3s infinite;
+            animation-iteration-count: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div id="div1"></div>
+        <div id="div2" style=" float: left;"></div>
+    </div>
+
+    <div id="div3" style="float: left; clear: left;"></div>
+    <div id="div3" style="float: right; clear: right;"></div>
+
+
+    <div id="div4" style="float: left; clear: left;"></div>
+    <div id="div4" style="float: right; clear: right;"></div>
+
+</body>
+
+</html>

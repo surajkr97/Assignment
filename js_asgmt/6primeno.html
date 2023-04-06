@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        from = Number(prompt("Enter first number: "))
+        to = Number(prompt("Enter Second number: "))
+
+        
+
+        // for (i=from; i<=to; i++) {
+        //     let flag = 0;
+        //     for (p=2; p<=Math.floor(i/2); p++) {
+        //         if (i%p == 0) {
+        //             document.write(i," is not a prime no <br><br>"); 
+        //             flag = 1;
+        //             break;                  
+        //         }
+        //     }
+
+            
+        //     if (flag == 0) {
+        //         document.write(i," is prime no <br><br>")
+        //     }
+        // }
+
+        i=from;
+        do {
+            let flag = 0;
+            for (p=2; p<=Math.floor(i/2); p++) {
+                if (i%p == 0) {
+                    document.write(i," is not a prime no <br><br>"); 
+                    flag = 1;
+                    break;                  
+                }
+            }
+
+            
+            if (flag == 0) {
+                document.write(i," is prime no <br><br>")
+            }
+            i++;
+        }   while (i<=to);
+
+
+        // function yvyg() {
+        //     alert("Thanks");
+        // }
+        // setTimeout(yvyg,700);
+        
+        setTimeout(()=>{alert("Thanks")},700);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

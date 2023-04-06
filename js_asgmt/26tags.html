@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Dynamic Elements</h1>
+    <span>Select the element:</span>
+
+    <input type="checkbox" class="select" value="h1">h1
+    <input type="checkbox" class="select" value="h2">h2
+    <input type="checkbox" class="select" value="h3">h3
+    <input type="checkbox" class="select" value="h4">h4
+    <input type="checkbox" class="select" value="h5">h5
+    <input type="checkbox" class="select" value="h6">h6
+    <input type="checkbox" class="select" value="li">li <br><br>
+
+    <span>Type the text :</span> <input type="text" id="in"><br><br>
+    <button id="btn" onclick="fun()">Add Elements</button><br><br>
+
+    <div style="height: 400px;border:2px solid red" id="out"></div>
+
+
+    <script>
+        function fun() {
+
+            select = document.getElementsByClassName("select")
+            output = document.getElementById("out")
+
+            for (i = 0; i < select.length; i++) {
+                if (document.getElementsByClassName("select")[i].checked == true) {
+                    val = document.getElementsByClassName("select")[i].value
+                    element = document.createElement(val)
+                    text = document.getElementById("in").value;
+                    data = document.createTextNode(text)
+                    element.appendChild(data)
+                    output.appendChild(element)
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

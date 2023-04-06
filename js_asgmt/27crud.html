@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box input {
+            width: 650px;
+            margin-left: 20px;
+        }
+
+        .box span {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red; display: flex; justify-content: center;">CRUD Operations in Front End Only</h1>
+    <hr>
+    <div class="box" style="height:360px; width: 700px; border: 3px solid green; margin-left: 350px;">
+        <br> <span> Full Name* </span> <br><br> <input type="text" id="name1"> <br><br>
+        <span> Email Id</span> <br><br> <input type="text" id="email1"> <br><br>
+        <span> Salary</span> <br><br> <input type="text" id="salary1"> <br><br>
+        <span> City</span> <br><br> <input type="text" id="city1"> <br><br>
+        <button onclick="fun()"
+            style="height: 30px; width: 180px; float: right; margin-right: 15px; background-color: black; color: white; border-radius: 7px;">Submit</button>
+    </div>
+    <br>
+
+    <table style="height:80px; width: 900px; border: 3px solid blue; margin-left: 255px;">
+        <tr>
+            <th>Full Name</th>
+            <th>Email Id</th>
+            <th>Salary</th>
+            <th>City</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td id="name2"></td>
+            <td id="email2"></td>
+            <td id="salary2"></td>
+            <td id="city2"></td>
+            <td id="actions2"></td>
+        </tr>
+    </table>
+
+    <script>
+        function fun() {
+            val = document.getElementById("name1").value
+            let element = document.createElement("td")
+            let data = document.createTextNode(val)
+            element.appendChild(data)
+
+            // document.getElementById("email2").innerHTML = document.getElementById("email1").value
+            // document.getElementById("salary2").innerHTML = document.getElementById("salary1").value
+            // document.getElementById("city2").innerHTML = document.getElementById("city1").value
+            // document.getElementById("actions2").innerHTML = "Edit Delete"
+        }
+    </script>
+
+</body>
+
+</html>

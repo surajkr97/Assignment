@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        n = Number(prompt("Enter any number to reverse it: "))
+        sm=0;
+
+        do {
+        r = n%10
+        n = Math.floor(n/10)
+        sm = sm*10 + r
+        } while(n>0);
+
+        document.write("Your no is: ", sm)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

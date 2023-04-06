@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form id="f" action="#">
+        Name: <input type="text" placeholder="Enter your name"><br><br>
+        Roll: <input type="text" placeholder="Enter your roll no"><br><br>
+        Class: <input type="text" placeholder="Enter your class"><br><br>
+        Age: <input type="text" placeholder="Enter your age"><br><br>
+    </form>
+
+    <button onclick="fun()">Click to show</button>
+
+    <p id="empty_area"></p>
+
+    <script>
+        function fun() {
+            var data = document.getElementById("f")
+
+            var text = "";
+
+            var i;
+
+            for(i=0;i<data.length;i++){
+                text = text + data.elements[i].value + "<br>"
+            }
+
+            document.getElementById("empty_area").innerHTML = text
+            document.getElementById("empty_area").style="border: 2px solid red"
+
+        }
+    </script>
+    
+</body>
+</html>

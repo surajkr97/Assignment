@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        n = Number(prompt("Enter any number: "))
+
+        for(i=1; i<=Math.floor(n/2); i++) {
+            if (n%i == 0) {
+                sm=sm+i
+            }
+        }
+
+        if (sm == n) {
+            document.write("Perfect Number")
+        }
+
+        else {
+            document.write("Not Perfect Number")
+        }
+
+    </script> -->
+
+    <script>
+
+        input1 = Number(prompt("Enter your first number: "));
+        input2 = Number(prompt("Enter your second number: "))
+
+        for (i=input1; i<input2; i++) {
+            k=0;
+            for (j=1; j<i; j++) {
+                if (i%j==0) {
+                    k = k + j;
+                }
+            }
+
+            if(k == i) {
+                document.write(i," is a perfect number <br>")
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

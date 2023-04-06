@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="in1"> <button onclick="act1()">Fact</button> <input type="text" id="op1">
+    <script>
+        function act1() {
+        let data1 = Number(document.getElementById("in1").value)
+        f=1;
+        for (i=1;i<=data1;i++){
+            f=f*i;
+        }
+        document.getElementById("op1").value = f;
+    }
+    </script>
+</body>
+</html>

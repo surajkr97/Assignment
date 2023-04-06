@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">0</h1>
+
+    <script>
+
+        function vp() {
+            console.log("check")
+            x = Number(document.getElementById("h").innerHTML)
+            x = x + 1;
+            if (x<=50) {
+            document.getElementById("h").innerHTML = x;
+            }
+            else {
+                clearTimeout(xp)
+            }
+        }
+
+        let xp = setInterval(vp,100)
+
+    </script>
+</body>
+</html>

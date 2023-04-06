@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+
+        // function lcm (x,y) {
+        //     mx = (x>y) ? x:y
+        //     for (i=mx; i<=x*y; i++){
+        //         if (i%x==0 && i%y==0){
+        //             return i;
+        //         }
+        //     }
+        // }
+
+        // x = (prompt("Enter first number: "))
+        // y = (prompt("Enter second number: "))
+        // result = lcm(x,y);
+        // document.write("LCM is: ", result);
+
+
+        function hcf (x,y){
+            min = (x<y) ? x : y
+            p = 1;
+            for (i=2; i<=min; i++) {
+                if (x%i==0 && y%i==0) {
+                    p = i;
+                }
+            }
+            return p;
+        }
+
+        x = (prompt("Enter first number: "))
+        y = (prompt("Enter second number: "))
+
+        result = hcf(x, y);
+        document.write("HCF is: ", result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

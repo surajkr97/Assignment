@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let book = [{ "name": "maths", "writer": "HC verma", "price": "200", "publication": "roli books" }, {
+            "name": "the indian story ",
+            "writer": "Bimal jalal", "price": "240", "publication": "Harper collins"
+        }, {
+            "name": "A place called home", "writer": "preeti shoeny",
+            "price": "290", "publication": "rupa publication"
+        }, {
+            "name": "queen of fire", "writer": "devika rangachari", "price": "500",
+            "publication": "simon"
+        },
+        { "name": "monsoon", "writer": "sahitya akademi", "price": "300", "publication": "hachette" }]
+
+        book.map((x) => {
+            document.write("name : ", x.name, "<br>")
+            document.write("writer : ", x.writer, "<br>")
+            document.write("price : ", x.price, "<br>")
+            document.write("publication : ", x.publication, "<br><br>")
+        }
+        )
+
+    </script>
+</body>
+</html>

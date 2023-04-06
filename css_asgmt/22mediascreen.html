@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        @media screen and (max-width:600px) and (max-height: 600px) {
+            div {
+                height: 200px;
+                width: 200px;
+                background-color: blue;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            div {
+                height: 200px;
+                width: 200px;
+                background-color: yellowgreen;
+            }
+        }
+
+        @media screen and (min-width:901px) and (max-width:1000px) {
+            div {
+                height: 200px;
+                width: 200px;
+                background-color: hotpink;
+            }
+        }
+
+        @media screen and (min-width:1100px) {
+            div {
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

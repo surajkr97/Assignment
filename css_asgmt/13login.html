@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #prx1 {
+            border-radius: 2.5% 0% 0% 2.5%;
+        }
+
+        #prx2 {
+            border-radius: 0% 2.5% 2.5% 0%;
+        }
+
+        #prx3 {
+            margin-left: 50px;
+        }
+
+        #prx4 {
+            height: 32px;
+            width: 240px;
+            margin: 10px 50px;
+            border: none;
+            border-bottom: 1px solid black;
+            color: purple;
+        }
+
+        #prx5 {
+            height: 32px;
+            width: 100px;
+            float: left;
+            border: ridge;
+            border-bottom: 2px solid black;
+        }
+
+        ::placeholder {
+            color: purple;
+        }
+
+        /* :focus{background-color: yellowgreen;}        */
+    </style>
+</head>
+
+<body>
+    <div style="height: 1500px; background-image:linear-gradient(white, purple);">
+        <div style="height: 600px; width: 50%; 
+                background-color: white; 
+                margin: 140px 340px; 
+                border-radius: 2.5%;
+                position: fixed;">
+            <div>
+                <img src="images/nightbuildings.jpg" alt="lol" height="600px" width="50%" id="prx1"
+                    style="float: left;">
+            </div>
+            <div id="prx2" style="height: 600px; width: 50%; float: right;">
+                <h1 id="prx3" style="color: purple; margin-top: 60px;">Join Us</h1>
+                <input id="prx4" type="text" placeholder="your name">
+                <input id="prx4" type="date" placeholder="your name">
+                <select id="prx4">
+                    <option> Gender </option>
+                    <option> Male </option>
+                    <option> Female </option>
+                </select>
+                <input id="prx4" type="text" placeholder="Contact number">
+                <input id="prx4" type="text" placeholder="Email">
+                <input id="prx4" type="text" placeholder="Password">
+                <input id="prx4" type="text" placeholder="Confirm Password">
+                <input id="prx5" type="button" value="Join Us" style="margin-left: 50px; margin-top: 10px;">
+                <input id="prx5" type="button" value="Login" style="margin-left: 40px; margin-top: 10px;">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

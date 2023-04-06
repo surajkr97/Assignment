@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .nav {
+            list-style: none;
+        }
+
+        .nav li {
+            background-color: aqua;
+            float: left;
+        }
+
+        .nav li {
+            padding: 50px;
+        }
+
+        .nav li li {
+            font-size: 85%;
+        }
+
+        .nav li:hover {
+            background-color: yellow;
+        }
+
+        .nav ul {
+            display: none;
+            position: absolute;
+            padding: 10px 20px 10px 20px;
+            background-color: blue;
+        }
+
+        .nav li:hover ul {
+            display: block;
+        }
+
+        .nav li:hover ul ul {
+            display: none;
+        }
+
+        .nav li li:hover ul {
+            display: block;
+        }
+
+        /* .nav li li li {float: left;} */
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="#"> Food </a></li>
+        <li><a href="#"> Snacks </a>
+            <ul class="nav">
+                <li><a href="#"> Chips </a></li>
+                <li><a href="#"> Doritis </a></li>
+            </ul>
+        </li>
+        <li><a href="#"> Beverages </a>
+            <ul class="nav">
+                <li> Sparkle Water </li>
+                <li><a href="#"> Mohjito </a></li>
+                <li><a href="#"> Cold Drinks </a>
+                    <ul class="nav">
+                        <li><a href="#"> Pespsi </a></li>
+                        <li><a href="#"> Fanta </a></li>
+                        <li><a href="#"> Thumbs Up </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#"> Sweets </a></li>
+    </ul>
+</body>
+
+</html>
