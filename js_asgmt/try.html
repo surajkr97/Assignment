@@ -93,6 +93,13 @@
 </body> -->
 
 <body>
+
+    <form onsubmit="validation()" id="frm">
+        <input type="text" id="in">
+        <p id="para" style="color: red"></p>
+        <button>Submit</button>
+    </form>
+
     <script>
 
         function validation(event) {
@@ -113,7 +120,7 @@
         function fun() {
             document.getelementById("para").innerHTML = ""
         }
-        
+
     </script>
 </body>
 
