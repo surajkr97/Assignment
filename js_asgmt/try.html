@@ -93,7 +93,28 @@
 </body> -->
 
 <body>
-    
+    <script>
+
+        function validation(event) {
+            event.preventDefault()
+            let vl = document.getElementById("in").value
+            if (vl == "") {
+                document.getElementById("para").innerHTML = "field is blank"
+            }
+
+            else if (vl.length < 3) {
+                document.getElementById("para").innerHTML = "value is less than 3"
+            }
+
+            else {
+                document.getElementById("frm").submit()
+            }
+        }
+        function fun() {
+            document.getelementById("para").innerHTML = ""
+        }
+        
+    </script>
 </body>
 
 </html>
