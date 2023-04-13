@@ -1,127 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<!-- <body>
-
-    <script>
-
-        //1
-        let a= [15, 18,17,13, 19, 12, 11, 161]
-            for (i=0;i<a.length;i++){
-                // document.write(a[i],"<br>")
-                if (a[i] % 2 != 0) {
-                    document.write(a[i],"<br>")
-                }
-            }
-
-        //2
-        let a = [15, 18, 17, 13, 19, 12, 11, 161]
-        for (i = 0; i < a.length; i++) {
-            // document.write(a[i],"<br>")
-            if (a[i] == 14) {
-                document.write("found")
-            }
-            else {
-                document.write("not found")
-            }
-        }
-
-
-        //3
-        const a = [12, 23, 46, 57, 96, 43];
-        const even = [];
-        const odd = [];
-
-        for (let i = 0; i < a.length; i++) {
-            if (a[i] % 2 === 0) {
-                even.push(a[i]);
-            } else {
-                odd.push(a[i]);
-            }
-        }
-
-        console.log("Even numbers: " + even);
-        console.log("Odd numbers: " + odd);
-        
-
-    </script>
-
-</body> -->
-
-<!-- <body>
-    <h1 style="color: red;">Dynamic Elements</h1>
-
-    <label>Select Your Element: </label>
-    <input type="checkbox" class="select" value="h1"> h1
-    <input type="checkbox" class="select" value="h2"> h2
-    <input type="checkbox" class="select" value="h3"> h3
-    <input type="checkbox" class="select" value="h4"> h4
-    <input type="checkbox" class="select" value="h5"> h5
-    <input type="checkbox" class="select" value="h6"> h6
-    <input type="checkbox" class="select" value="li"> li
-
-    <br><br>
-    Enter your text: <input type="text" id="in">
-
-    <br><br>
-    <button onclick="fun()" id="btn">AddElement</button>
-
-    <br><br>
-    <div id="out" style="height: 400px; border: 2px solid red;"></div>
-
-    <script>
-        function fun() {
-            for (i = 0; i < select.length; i++) {
-                if (document.getElementsByClassName("select")[i].checked == true) {
-                    val = document.getElementsByClassName("select")[i].value
-                    element = document.createElement(val)
-                    text = document.getElementById("in").value;
-                    data = document.createTextNode(text)
-                    element.appendChild(data)
-                    output.appendChild(element)
-                }
-            }
-        }
-    </script>
-</body> -->
-
 <body>
-
-    <form onsubmit="validation()" id="frm">
-        <input type="text" id="in">
-        <p id="para" style="color: red"></p>
-        <button>Submit</button>
-    </form>
-
     <script>
-
-        function validation(event) {
-            event.preventDefault()
-            let vl = document.getElementById("in").value
-            if (vl == "") {
-                document.getElementById("para").innerHTML = "field is blank"
-            }
-
-            else if (vl.length < 3) {
-                document.getElementById("para").innerHTML = "value is less than 3"
-            }
-
-            else {
-                document.getElementById("frm").submit()
-            }
-        }
-        function fun() {
-            document.getelementById("para").innerHTML = ""
-        }
-
+        
     </script>
 </body>
-
 </html>
