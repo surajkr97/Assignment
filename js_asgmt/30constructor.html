@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor(emp_id,emp_name,emp_city,ta,da){
+                this.id=emp_id
+                this.name=emp_name
+                this.city=emp_city
+                this.ta=ta
+                this.da=da
+            }
+
+            get_employee_details(){
+                document.write("Id: ",this.id,"<br>")
+                document.write("Name: ",this.name,"<br>")
+                document.write("City: ",this.city,"<br>")
+                document.write("ta: ",this.ta,"<br>")
+                document.write("da: ",this.da,"<br>")
+            } 
+        }
+
+        let ob = new Employee(4368,"Abhinav","Tech",55000,94000)
+
+        ob.get_employee_details()
+
+    </script>
+</body>
+</html>
