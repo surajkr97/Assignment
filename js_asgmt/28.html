@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            student_details (r,n,cl){
+                document.write("RollNo: ",r,"<br")
+                document.write("Name: ",n,"<br")
+                document.write("Class: ",cl,"<br")
+            }
+
+            student_result(h,e,m,s,sst){
+                document.write("Hindi : ",h,"<br>")
+                document.write("English : ",e,"<br>")
+                document.write("Maths : ",m,"<br>")
+                document.write("Science : ",s,"<br>")
+                document.write("Social Science : ",sst,"<br>")
+            }
+        }
+
+        let ob = new student()
+        
+        ob.student_details(1,"Suraj","15th")
+        ob.student_result(83,94,65,77,100)
+
+    </script>
+</body>
+</html>
