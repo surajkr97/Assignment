@@ -23,6 +23,7 @@
             outline: none;
             font-size: 25px;
             vertical-align: middle;
+            border-radius: 5px;
         }
 
         #addToDo {
@@ -31,6 +32,7 @@
             border: 1px solid black;
             vertical-align: middle;
             font-size: 30px;
+            border-radius: 5px;
         }
 
         .to-dos {
@@ -40,11 +42,11 @@
         .paragraph-styling {
             /* margin: 0; */
             cursor: pointer;
-            font-size: 20px;
+            font-size: 30px;
         }
 
         h1 {
-            color: orchid;
+            color: orangered;
             display: flex;
             justify-content: center;
         }
@@ -53,19 +55,18 @@
             float: right;
         }
 
-        div1 {
+        span2 {
             float: right;
         }
-
     </style>
 </head>
 
 <body>
     <h1>To Do List in Front End Only</h1>
-    <hr>
+    <hr style="margin-bottom: 25px;">
     <div class="container" style="margin-left: 38%;">
         <div style="display: flex;">
-            <input id="inputField" type="text" placeholder="Enter Your Text Here"> 
+            <input id="inputField" type="text" placeholder="Enter Your Task Here">
             <button id="addToDo">+</button>
         </div>
         <div class="to-dos" id="toDoContainer">
@@ -79,26 +80,27 @@
         let inputField = document.getElementById('inputField');
 
         addToDoButton.addEventListener('click', function () {
-            var paragraph = document.createElement('p');
-            paragraph.classList.add('paragraph-styling');
-            paragraph.innerText = inputField.value;
-            toDoContainer.appendChild(paragraph);
-            
-            var span = document.createElement('span')
-            span.innerHTML = '<i class="ri-close-circle-fill"></i>'
-            paragraph.appendChild(span);
+            if (inputField.value === "") {
+                alert('Enter Task')
+            }
+            else {
+                var paragraph = document.createElement('p');
+                paragraph.classList.add('paragraph-styling');
+                paragraph.innerText = inputField.value;
+                toDoContainer.appendChild(paragraph);
 
-            var div1 = document.createElement('div1')
-            div1.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
-            paragraph.appendChild(div1); 
+                var span = document.createElement('span')
+                span.innerHTML = '<i class="ri-close-circle-fill"></i>'
+                paragraph.appendChild(span);
 
-            inputField.value = "";
+                var span2 = document.createElement('span2')
+                span2.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
+                paragraph.appendChild(span2);
 
-            // paragraph.addEventListener('click', function () {
-            //     paragraph.style.textDecoration = 'line-through';
-            // })
+                inputField.value = "";
+            }
 
-            div1.addEventListener('click', function () {
+            span2.addEventListener('click', function () {
                 paragraph.style.textDecoration = 'line-through';
             })
 
