@@ -3,6 +3,7 @@
 
 <head>
     <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         html,
         body {
@@ -47,6 +48,15 @@
             display: flex;
             justify-content: center;
         }
+
+        span {
+            float: right;
+        }
+
+        div1 {
+            float: right;
+        }
+
     </style>
 </head>
 
@@ -55,7 +65,8 @@
     <hr>
     <div class="container" style="margin-left: 38%;">
         <div style="display: flex;">
-            <input id="inputField" type="text" placeholder="Enter Your Text Here"> <button id="addToDo">+</button>
+            <input id="inputField" type="text" placeholder="Enter Your Text Here"> 
+            <button id="addToDo">+</button>
         </div>
         <div class="to-dos" id="toDoContainer">
 
@@ -72,13 +83,26 @@
             paragraph.classList.add('paragraph-styling');
             paragraph.innerText = inputField.value;
             toDoContainer.appendChild(paragraph);
+            
+            var span = document.createElement('span')
+            span.innerHTML = '<i class="ri-close-circle-fill"></i>'
+            paragraph.appendChild(span);
+
+            var div1 = document.createElement('div1')
+            div1.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
+            paragraph.appendChild(div1); 
+
             inputField.value = "";
 
-            paragraph.addEventListener('click', function () {
+            // paragraph.addEventListener('click', function () {
+            //     paragraph.style.textDecoration = 'line-through';
+            // })
+
+            div1.addEventListener('click', function () {
                 paragraph.style.textDecoration = 'line-through';
             })
 
-            paragraph.addEventListener('dblclick', function () {
+            span.addEventListener('click', function () {
                 toDoContainer.removeChild(paragraph);
             })
         })
