@@ -17,7 +17,7 @@
         }
 
         #inputField {
-            width: 360px;
+            width: 300px;
             height: 46px;
             border: 1px solid black;
             outline: none;
@@ -28,7 +28,7 @@
 
         #addToDo {
             height: 50px;
-            width: 50px;
+            width: 65px;
             border: 1px solid black;
             vertical-align: middle;
             font-size: 30px;
@@ -42,7 +42,7 @@
         .paragraph-styling {
             /* margin: 0; */
             cursor: pointer;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         h1 {
@@ -89,10 +89,12 @@
                 paragraph.innerText = inputField.value;
                 toDoContainer.appendChild(paragraph);
 
+                //cancel icon
                 var span = document.createElement('span')
                 span.innerHTML = '<i class="ri-close-circle-fill"></i>'
                 paragraph.appendChild(span);
 
+                // checkbox icon
                 var span2 = document.createElement('span2')
                 span2.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
                 paragraph.appendChild(span2);
