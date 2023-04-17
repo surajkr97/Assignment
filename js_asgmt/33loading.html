@@ -21,22 +21,49 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 15px;
             grid-auto-rows: 15px;
+            width: 300px;
+        }
+
+        main div{
+            background-color: pink;
+            height: 80px;
+            width: 80px;
         }
     </style>
 </head>
 
 <body>
-    <main style="width: 300px;">
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: white; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
-        <div style="background-color: pink; height: 80px; width: 80px;"></div>
+    <main class="main">
+        <div class="parts" id="_1"></div>
+        <div class="parts" id="_8"></div>
+        <div class="parts" id="_7"></div>
+        <div class="parts" id="_2"></div>
+        <div> </div>
+        <div class="parts" id="_6"></div>
+        <div class="parts" id="_3"></div>
+        <div class="parts" id="_4"></div>
+        <div class="parts" id="_5"></div>
     </main>
+
+    <script>
+        var count = 1;
+        setInterval(()=>{
+            document.getElementById('_'+count).style.backgroundColor='white';
+            if(count>1){
+                document.getElementById('_'+(count-1)).style.backgroundColor='pink';
+            }
+            else{
+                document.getElementById('_8').style.backgroundColor='pink';
+            }
+
+            if(count==8){
+                count=1;
+            }
+            else{
+                count+=1;
+            }
+        },300)
+    </script>
 </body>
 
 </html>
