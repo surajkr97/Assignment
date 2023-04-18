@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // class student {
@@ -27,31 +29,31 @@
         // ob.get_student_details()
 
         class Employee {
-            set_employee_details(id,n,br){
-                this.id=id
-                this.name=n
-                this.brn=br
+            set_employee_details(id, n, br) {
+                this.id = id
+                this.name = n
+                this.brn = br
             }
 
-            get_employee_details(){
-                document.write("Employee Id: ",this.id,"<br>")
-                document.write("Employee Name: ",this.name,"<br>")
-                document.write("Employee Branch: ",this.brn,"<br><br>")
+            get_employee_details() {
+                document.write("Employee Id: ", this.id, "<br>")
+                document.write("Employee Name: ", this.name, "<br>")
+                document.write("Employee Branch: ", this.brn, "<br><br>")
             }
 
-            set_employee_salary(sl){
-                this.slry=sl
+            set_employee_salary(sl) {
+                this.slry = sl
             }
 
-            get_employee_salary(){
-                document.write("Salary is: ",this.slry,"<br><br>")
+            get_employee_salary() {
+                document.write("Salary is: ", this.slry, "<br><br>")
             }
         }
 
 
         let ob = new Employee()
 
-        ob.set_employee_details(4368,"Abhinav","Tech")
+        ob.set_employee_details(4368, "Abhinav", "Tech")
         ob.get_employee_details()
 
         ob.set_employee_salary(45000)
@@ -59,4 +61,5 @@
 
     </script>
 </body>
+
 </html>
