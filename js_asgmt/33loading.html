@@ -24,7 +24,7 @@
             width: 300px;
         }
 
-        main div{
+        main div {
             background-color: pink;
             height: 80px;
             width: 80px;
@@ -47,22 +47,22 @@
 
     <script>
         var count = 1;
-        setInterval(()=>{
-            document.getElementById('_'+count).style.backgroundColor='white';
-            if(count>1){
-                document.getElementById('_'+(count-1)).style.backgroundColor='pink';
+        setInterval(() => {
+            document.getElementById('_' + count).style.backgroundColor = 'white';
+            if (count > 1) {
+                document.getElementById('_' + (count - 1)).style.backgroundColor = 'pink';
             }
-            else{
-                document.getElementById('_8').style.backgroundColor='pink';
+            else {
+                document.getElementById('_8').style.backgroundColor = 'pink';
             }
 
-            if(count==8){
-                count=1;
+            if (count == 8) {
+                count = 1;
             }
-            else{
-                count+=1;
+            else {
+                count += 1;
             }
-        },300)
+        }, 300)
     </script>
 </body>
 
