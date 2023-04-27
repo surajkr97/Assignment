@@ -13,7 +13,7 @@
         fetch('https://api.sampleapis.com/beers/ale').then(response => response.text())
         .then(data => document.write(data));
     </script> -->
-    <script>
+    <!-- <script>
         fetch('https://api.sampleapis.com/beers/ale')
             .then(response => {
                 if (!response.ok) {
@@ -22,7 +22,29 @@
                 }
                 response.text().then(data => document.write(data))
             }).catch(err => document.write(err))
+    </script> -->
+
+    <script>
+        function lcm (input1,input2) {
+            mx = (input1>input2) ? input1:input2
+            for (i=mx; i<=input1*input2; i++){
+                if (i%input1==0 && i%input2==0){
+                    return i;
+                }
+            }
+        }
+
+        x = (prompt("Enter first number: "))
+        y = (prompt("Enter second number: "))
+        result = lcm(input1,input2);
+        // document.write("LCM is: ", result);
+
+        const z = [x,y];
+        const [input1, input2] = z
+
+        document.write(result);
     </script>
+
 </body>
 
 </html>
