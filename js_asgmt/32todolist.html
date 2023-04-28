@@ -7,13 +7,17 @@
     <style>
         html,
         body {
-            /* width: 50%;
-            margin: 0 auto; */
+            width: 70%;
+            margin: 0 auto;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         .container {
-            width: 360px;
+            width: 368px;
+            background-color: #ecfffb;
+            outline: 95px solid #ecfffb;
+            border-radius: .9px;
+            margin: 13rem auto;
         }
 
         #inputField {
@@ -33,6 +37,7 @@
             vertical-align: middle;
             font-size: 30px;
             border-radius: 5px;
+            margin-left: 1rem;
         }
 
         .to-dos {
@@ -40,10 +45,8 @@
         }
 
         .paragraph-styling {
-            /* margin: 0; */
             cursor: pointer;
             font-size: 25px;
-            /* white-space: normal; */
             word-wrap: break-word;
         }
 
@@ -66,10 +69,10 @@
 <body>
     <h1>To Do List in Front End Only</h1>
     <hr style="margin-bottom: 25px; width: 90%;">
-    <div class="container" style="margin-left: 38%;">
+    <div class="container" >
         <div style="display: flex;">
             <input id="inputField" type="text" placeholder="Enter Your Task Here">
-            <button id="addToDo">+</button>
+            <button id="addToDo">➕</button>
         </div>
         <div class="to-dos" id="toDoContainer">
 
@@ -83,7 +86,7 @@
 
         addToDoButton.addEventListener('click', function () {
             if (inputField.value === "") {
-                alert('Enter Task')
+                alert('Enter Task First')
             }
             else {
                 var paragraph = document.createElement('p');
@@ -93,12 +96,14 @@
 
                 //cancel icon
                 var span = document.createElement('span')
-                span.innerHTML = '<i class="ri-close-circle-fill"></i>'
+                // span.innerHTML = '<i class="ri-close-circle-fill"></i>'
+                span.innerHTML = "❎"
                 paragraph.appendChild(span);
 
-                // checkbox icon
+                // check icon
                 var span2 = document.createElement('span2')
-                span2.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
+                // span2.innerHTML = '<i class="ri-checkbox-circle-fill"></i>'
+                span2.innerHTML = "✅"
                 paragraph.appendChild(span2);
 
                 inputField.value = "";
