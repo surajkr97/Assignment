@@ -2,14 +2,15 @@
   text-align: center;
 } */
 
-h1{
+h1 {
   color: red;
   display: flex;
   justify-content: center;
 }
 
-#hero{
-margin-top: 2%;
-margin-left: 43%;
-display: block;
+#hero {
+  width: 147px;
+  margin-top: 2%;
+  margin-left: 43%;
+  border: 2px ridge blue;
 }

@@ -21,3 +21,8 @@ export function App2() {
 }
 
 export default App;
+
+//reusability
+//jsx : javascript xml
+//xml : xtensible markup language
+//virtual dom : copy of real dom
