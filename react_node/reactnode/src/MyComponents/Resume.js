@@ -8,5 +8,5 @@ export default function Resume(){
         <h4>Contact: 7367089724</h4>
         <h4>Mail: surajkr97@icloud.com</h4>
         </>
-    )
+    );
 }
