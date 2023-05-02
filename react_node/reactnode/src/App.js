@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import New from './newcomponent';
+import New from './MyComponents/new';
+
 
 function App() {
   return (
@@ -28,3 +29,4 @@ export default App;
 //jsx : javascript xml
 //xml : xtensible markup language
 //virtual dom : copy of real dom
+//React.fragment used to create group by avoiding div (<> </>)

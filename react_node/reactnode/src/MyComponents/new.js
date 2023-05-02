@@ -1,4 +1,4 @@
-import './newcomponent.css'
+import '../ComponentCss/new.css'
 
 function New (){
     return(
