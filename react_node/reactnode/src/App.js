@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Resume from './MyComponents/Resume';
+import Resume, { Resume1, Resume2, Resume3 } from './MyComponents/Resume';
 import New from './MyComponents/new';
 
 export default function App(){
@@ -15,6 +15,9 @@ export function App1(){
   return(
     <>
       <Resume />
+      <Resume1 />
+      <Resume2 />
+      <Resume3 />
     </>
   );
 }
