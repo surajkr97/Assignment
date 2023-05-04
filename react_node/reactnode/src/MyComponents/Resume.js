@@ -1,5 +1,5 @@
 import '../ComponentCss/Resume.css'
-import dp from '../img/dp.jpg'
+// import dp from '../img/dp.jpg'
 
 export default function Resume(){
     return(
