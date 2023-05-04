@@ -11,6 +11,8 @@
     border-radius: 50%;
     background-color: aliceblue;
     margin: 50px 50px 20px 120px;
+    background-image: url(../img/dp.jpg);
+    background-size: contain;
 }
 
 .hrline1{
@@ -21,6 +23,7 @@
 #hero-text{
     float: right;
     margin-left: 120px;
+    color: aliceblue;
 }
 
 #hero-text h3{
@@ -37,6 +40,10 @@
     margin-left: 450px;
     margin-right: 80px;
     position: absolute;
+}
+
+#name-section h1{
+    color: rgb(57, 107, 150);
 }
 
 #projects{

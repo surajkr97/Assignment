@@ -1,9 +1,12 @@
 import '../ComponentCss/Resume.css'
+import dp from '../img/dp.jpg'
 
 export default function Resume(){
     return(
         <div id="header">
-        <div id='profile'></div>
+        <div id='profile'>
+            {/* <img src={dp}></img> */}
+        </div>
         <div id='hero-text'>
         <h3>CONTACT</h3>
         <hr className='hrline1'></hr>
