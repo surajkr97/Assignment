@@ -1,28 +1,5 @@
-import './App.css';
-import { ExpenseTrack } from './MyComponents/Expense';
-
-// import Resume, { Resume1, Resume2, Resume3 } from './MyComponents/Resume';
-// import New from './MyComponents/new';
-
-// export default function App(){
-//   return(
-//     <>
-//     <New />
-//     </>
-//   )
-// }
-
-// export function App1(){
-//   return(
-//     <>
-//       <Resume />
-//       <Resume1 />
-//       <Resume2 />
-//       <Resume3 />
-//     </>
-//   );
-// }
-
+import React from "react";
+import ExpenseTrack from "./MyComponents/Expense";
 
 //reusability
 //jsx : javascript xml
@@ -31,7 +8,7 @@ import { ExpenseTrack } from './MyComponents/Expense';
 //React.fragment used to create group by avoiding div (<> </>)
 
 
-export function ExpenseApp(){
+export default function ExpenseApp(){
     let ob = {
         "dt1": new Date(2020, 1, 19), "nm1": "Car Insurance", "pr1": "$200",
         "dt2": new Date(2021, 8, 24), "nm2": "T-Shirt for Goa Trip", "pr2": "$80",

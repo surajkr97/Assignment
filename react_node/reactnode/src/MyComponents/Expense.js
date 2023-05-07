@@ -1,6 +1,6 @@
-import "../ComponentCss/new.css"
+import "../ComponentCss/Expense.css"
 
-export function ExpenseTrack(props) {
+export default function ExpenseTrack(props) {
     let month = props.date.toLocaleString('en - US', { month: 'long' })
     let year = props.date.getFullYear();
     let day = props.date.toLocaleString('en-US', { day: '2-digit' })
