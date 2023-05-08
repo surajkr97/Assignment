@@ -1,20 +1,12 @@
-import React from "react";
+// import React from "react";
+// import { ExpenseApp } from "./MyComponents/Expense";
+// // import HideShow from "./MyComponents/HideShowButton"
 
-
-//reusability
-//jsx : javascript xml
-//xml : xtensible markup language
-//virtual dom : copy of real dom
-//React.fragment used to create group by avoiding div (<> </>)
-
-import { ExpenseApp } from "./MyComponents/Expense";
-// import HideShow from "./MyComponents/HideShowButton"
-
-export default function App(){
-    return(
-        <>
-        <ExpenseApp />
-        </>
-    );
-}
+// export default function App(){
+//     return(
+//         <>
+//         <ExpenseApp />
+//         </>
+//     );
+// }
 

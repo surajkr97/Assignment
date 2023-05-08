@@ -1,7 +1,7 @@
 import "../ComponentCss/Expense.css"
 
 export default function ExpenseTrack(props) {
-    let month = props.date.toLocaleString('en - US', { month: 'long' })
+    let month = props.date.toLocaleString('en-US', { month: 'long' })
     let year = props.date.getFullYear();
     let day = props.date.toLocaleString('en-US', { day: '2-digit' })
     return (
@@ -17,13 +17,13 @@ export default function ExpenseTrack(props) {
                 <div className="exp_pr">{props.price}</div>
             </div>
         </div>
-    )
+    );
 }
 
 export function ExpenseApp(){
     let ob = {
         "dt1": new Date(2020, 1, 19), "nm1": "Car Insurance", "pr1": "$200",
-        "dt2": new Date(2021, 8, 24), "nm2": "T-Shirt for Goa Trip", "pr2": "$80",
+        "dt2": new Date(2021, 5, 24), "nm2": "T-Shirt for Goa Trip", "pr2": "$80",
         "dt3": new Date(2022, 7, 11), "nm3": "Shoes", "pr3": "$700",
         "dt4": new Date(2023, 2, 25), "nm4": "Goa Trip", "pr4": "$2600"
     }
