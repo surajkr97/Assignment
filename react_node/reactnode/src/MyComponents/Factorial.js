@@ -1,28 +1,24 @@
 import React, { useState } from "react";
 
 function Factorial() {
-  const [number, setNumber] = useState(0);
-  const [factorial, setFactorial] = useState(1);
+let [val, setValue] = useState(0)
+function fact() {
+  let a = document.getElementById("fct").value;
+  let f = 1
+  for (let i = 1; i <= a; i++) {
+    f = f*i;
+  }
+  setValue(f)
+}
 
-  const calfact = () => {
-    let fact = 1;
-    for (let i = 1; i <= number; i++) {
-      fact = fact * i;
-    }
-    setFactorial(fact);
-  };
+return(
+  <>
+  <input type="text" id="fct" placeholder="enter number"></input>
+  <h1 style={{color:'red'}}>Factorial is: {val}</h1>
 
-  return (
-    <div>
-      <input
-        type="number"
-        value={number}
-        onChange={(e) => setNumber(parseInt(e.target.value))}
-      />
-      <button onClick={calfact}>Calculate</button>
-      <p>Factorial: {factorial}</p>
-    </div>
-  );
+  <button onClick={fact}>Factorial</button>
+  </>
+)
 }
 
 export default Factorial;

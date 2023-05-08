@@ -1,12 +1,12 @@
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {ExpenseApp} from './MyComponents/Expense'
+import UseStateHook from './MyComponents/useEffect';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <ExpenseApp />
+  <UseStateHook/>
   </>
 );
