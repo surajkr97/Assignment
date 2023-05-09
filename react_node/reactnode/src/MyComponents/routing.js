@@ -33,7 +33,7 @@ function Contact(){
         <div>
             <h1 style={{color:"Yellow"}}> Contact Component </h1>
             <h3>Hello My Name Is Suraj Kumar Gupta</h3>
-            <p>kdhjf sdfkjsdf fivbfw vfijv svjrwbv esnv eiurjv fvibv env wrigv vren eirjkv erknv brv er knv erjkv erjvbreofer fjerbf fgvigv</p>
+            <p>dfg ntngd gthn htjkh jthsrhryr jtuj rwbv esnv eiurjv fvibv env wrigv vren eirjkv erknv brv er knv erjkv erjvbreofer fjerbf fgvigv</p>
             <br/>
         </div>
     );
@@ -44,7 +44,7 @@ function Services(){
         <div>
             <h1 style={{color:"Green"}}> Services Component </h1>
             <h3>Hello My Name Is Suraj Kumar Gupta</h3>
-            <p>kdhjf sdfkjsdf fivbfw vfijv svjrwbv esnv eiurjv fvibv env wrigv vren eirjkv erknv brv er knv erjkv erjvbreofer fjerbf fgvigv</p>
+            <p>kjsfddjsjvdf vgbd btjge gsnv eiurjv fvibv env wrigv vren eirjkv erknv brv er knv erjkv erjvbreofer fjerbf fgvigv</p>
             <br/>
         </div>
     );
